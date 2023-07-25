@@ -73,12 +73,12 @@ npm start
 
 ## ```HOW TO DEPLOY```
 
-[`Click Here For Tutorial`](https://youtu.be/8s2lHsgYaCc)<br>
+[`Click Here For Tutorial`](https://youtu.be/RsQf-ft7qpM)<br>
 
 ----------
 
 <p align="center">
-  <a href="https://youtu.be/8s2lHsgYaCc"><img src="https://e.top4top.io/p_2736otrab1.png" />
+  <a href="https://youtu.be/RsQf-ft7qpM"><img src="https://ibb.co/X2qmq7Y" />
 </p>
 
 ## Donate
