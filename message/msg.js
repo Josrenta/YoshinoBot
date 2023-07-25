@@ -325,7 +325,7 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 							body:
 								`${ucapanWaktu} kak ${pushname}`,
 							thumbnail: await getBuffer(pp_bot),
-sourceUrl: 'https://chat.whatsapp.com/HCNB8AKFibsB15vc0lI2b4'
+sourceUrl: 'https://chat.whatsapp.com/KShSydBXuPBIx0eeWgl7gY'
 						},
            }, 
 				},{quoted: msg})
