@@ -215,7 +215,14 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
         } else {
 		     conn.readMessages([msg.key])
 		}
-		
+
+		//Profil Bot
+           try {
+	
+ 					var pp_bot = await conn.profilePictureUrl(botNumber, 'image');
+					} catch {
+						var pp_bot = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg';
+}
 		// Auto Registrasi
 		if (isCmd && !isUser) {
 		  pendaftar.push(sender)
@@ -309,7 +316,19 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 			case prefix+'menu':
 			case prefix+'help':
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
-			    reply(teks)
+				 conn.sendMessage(from, {text: teks, contextInfo: {externalAdReply: {
+							title:`${ucapanWaktu} kak ${pushname}`,
+							mediaType: 1,
+                previewType: 0,
+							renderLargerThumbnail: true,
+							showAdAttribution: true,
+							body:
+								`${ucapanWaktu} kak ${pushname}`,
+							thumbnail: await getBuffer(pp_bot),
+sourceUrl: 'https://chat.whatsapp.com/HCNB8AKFibsB15vc0lI2b4'
+						},
+           }, 
+				},{quoted: msg})
 				break
 			case prefix+'runtime':
 			    reply(runtime(process.uptime()))
