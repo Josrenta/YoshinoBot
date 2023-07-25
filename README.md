@@ -51,11 +51,12 @@ npm start
 `./config.json`
 ```ts
 {
-  "ownerNumber": [
-    "6281575886399@s.whatsapp.net",
-    "6287806923281@s.whatsapp.net"],
+{
+  "ownerNumber": "62xxx@s.whatsapp.net",
   "ownerName": "rc",
   "botName": "Yoshino Bot",
+  "packname": "follow",
+  "author": "@riycoders",
   "donasi": {
 	"dana": "081575886399",
 	"gopay": "081575886399"
